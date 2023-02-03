@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yongjin Lee - An Introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img scr="images/IMG-3322.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="pastwork.html">PAST WORK</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Past Work</h1>
+    </section>
+    <section class="about-me">
+        <div class="row">
+            <div class="about-col">
+                <h1>
+                    <b>Environmental Sustainability</b>
+                </h1>
+                <p>
+                    Hawaii has a very fragile ecosystem. Many plants and animals have gone extinct and I wanted to
+                    work to solve this issue. Through a program called "Hawaii Youth Sustainability Challenge," I was
+                    able to secure $1000 in funding to start a native Hawaiian plant conservation project in my school
+                    garden.
+                </p>
+                <p>
+                    I developed a native Hawaiian plant section in my school garden after growing ~50 native bushes
+                    called
+                    "aweoweo" which are effective in mitigating soil erosion and are extremely drought-resistant. I was
+                    able
+                    to spread awareness through publication in a local paper, "Star Advertiser", and participating in an
+                    annual
+                    Hawaii Conservation Conference.
+                </p>
+            </div>
+            <div class="about-row">
+                <img src="images/IMG_9465.jpg" height="530px">
+            </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

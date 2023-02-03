@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yongjin Lee - An Introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img scr="images/IMG-3322.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="pastwork.html">PAST WORK</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Myself</h1>
+    </section>
+    <section class="about-me">
+        <div class="row">
+            <div class="about-col">
+                <h1>
+                    Nice to meet you!
+                </h1>
+                <p>
+                    I'm a freshman studying Environmental Engineering and Computer Science at Cornell University.
+                    I'm originally from South Korea but have lived in Indonesia, Canada, Washinton D.C., and Hawaii.
+                    While living in Hawaii, I did a native Hawaiian plant conservation project which was the official
+                    beginning of my interest in sustainability.
+                </p>
+                <p>
+                    I'm interested in applying computer programming for environmental sustainability. Through clubs,
+                    on-campus organizations, and coursework, I hope to be able to achieve my academic and career goals.
+                </p>
+            </div>
+            <div class="about-row">
+                <img src="images/IMG-3322.jpg" height="530px">
+            </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

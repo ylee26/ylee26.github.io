@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yongjin Lee - An Introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img scr="images/IMG-3322.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="pastwork.html"></a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                Hello, my name is Yongjin Lee
+            </h1>
+            <p>
+                I'm currently a freshman at Cornell University studying Environmental
+                Engineering and Computer Science. <br>I'm originally from South Korea but my
+                background is much more international.
+            </p>
+            <a href="" class="hero-btn"> Please let me know if you have any questions</a>
+        </div>
+    </section>
+    <section class="About">
+        <h1>
+            Here is a little bit about myself.
+        </h1>
+
+        <div class="row">
+            <div class="About-col">
+                <h3>
+                    Education
+                </h3>
+                <p>
+                    I graduated from Henry J. Kaiser High School in Honolulu, Hawai'i
+                    as valedictorian of my class with Academic and STEM Honors.
+                </p>
+
+            </div>
+            <div class="About-col">
+                <h3>
+                    Upbringing
+                </h3>
+                <p>
+                    Due to my father's job, I moved frequently throughout my
+                    life. I've lived in Korea, Indonesia, Canada, Washington D.C.,
+                    and Hawai'i.
+                </p>
+
+            </div>
+            <div class="About-col">
+                <h3>
+                    Academic Interests
+                </h3>
+                <h3>
+
+                </h3>
+                <p>
+                    Through work in the futrue,
+                    I'd like to find sustainable solutions to environmental problems using computer technology.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
